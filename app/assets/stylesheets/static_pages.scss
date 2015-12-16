@@ -1,0 +1,27 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background: url(concrete_seamless.png) repeat 0 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display SC', cursive;
+    font-style: italic bold;
+    font-weight: 700;
+    
+}
+
+.big-img {
+    display: inline;
+    align: middle;
+    margin: 50px;
+    border-color: #B4698B;
+}
+
+.panel-heading{
+  background: #B4698B;
+}
