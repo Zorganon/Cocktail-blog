@@ -1,29 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
-
-<p>
-  <strong>Entry:</strong>
-  <%= @blog.entry %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @blog.date %>
-</p>
-
-<p>
-  <strong>Drink:</strong>
-  <%= @blog.drink %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+<div class="container">
+  
+<%= render @blog %>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
+
+</div>
