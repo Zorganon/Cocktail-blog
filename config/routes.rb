@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :blogs
   get 'static_pages/about'
 
