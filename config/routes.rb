@@ -1,19 +1,17 @@
 Rails.application.routes.draw do
+  resources :posts do
+    resources :comments, shallow: true
+  end
+  
   devise_for :users
   resources :users
   resources :blogs
+
   get 'static_pages/about'
 
   get 'static_pages/index'
   
-  get 'blogs/index'
   
-  get 'blogs/show'
-  
-  get 'blogs/new'
-  
-  get 'blogs/edit'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
