@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3><%= link_to( post.title, post, :method => :get ) %></h3>
+    <%= post.drink_name %>: <%= post.ingredients %>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="post-content col-sm-12 col-md-6">
+        <%= image_tag(post.image_url, class: 'post-image')%>
+      </div>
+      <div class="post-content post-body col-sm-12 col-md-6">
+        <p><%= post.date %></p>
+        <p>Recipe: <%= post.recipe %></p>
+        <p><%= post.body %></p>
+        <p>tags: <%= post.tags %></p>
+      </div>    
+    </div>
+  </div>
+</div>
