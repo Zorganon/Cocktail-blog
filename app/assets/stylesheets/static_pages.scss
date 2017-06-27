@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//brighttheme
+$blue: #1B3A5B;
+$purple: #42183C;
+$rose: #D63747;
+$white: #FFF;
+$orange: #FF7332;
+
+$titlefont: 'Playfair Display SC', cursive;
+$paragraphfont: 'Ariel';
+
 body {
     background: url(concrete_seamless.png) repeat 0 0;
 }
@@ -25,3 +35,4 @@ h2 {
 .panel-heading{
   background: #B4698B;
 }
+
